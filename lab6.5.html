@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function gogo(){
+        var in1 = document.getElementById("n1")
+        var N1= in1.value;
+        var in2 = document.getElementById("n2")
+        var N2= in2.value;
+        var in3 = document.getElementById("n3")
+        var N3= in3.value;
+        
+        var tr = document.createElement("tr")
+         var td = document.createElement("td")
+         td.innerHTML=N1;
+         var td1 = document.createElement("td")
+         td1.innerHTML=N2;         
+         var td2 = document.createElement("td")
+         td2.innerHTML=N3;
+         
+        list.appendChild(tr)
+         tr.appendChild(td) 
+        tr.appendChild(td1)
+        tr.appendChild(td2)
+        
+
+       
+        }
+        
+    </script>
+    <style>
+       table,th,td{
+        border:1px solid black;
+    }
+    </style>
+    <body>
+        ชื่อลูกค้า :
+        <input type="text" id="n1">
+        <br>
+        ที่อยู่ :
+        <input type="text" id="n2">
+        <br>
+        โทีศัพท์ :
+        <input type="text" id="n3">
+        <br>
+        <input type="submit" value="เพิ่ม" onclick="gogo()">
+        <table id="list">
+            <tr>
+                <td>
+                    ชื่อลูกค้า
+                </td>
+                <td>
+                    ที่อยู่
+                </td>
+                <td>
+                    โทีศัพท์
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>
